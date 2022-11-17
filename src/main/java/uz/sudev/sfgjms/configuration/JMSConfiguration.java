@@ -9,6 +9,7 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 public class JMSConfiguration {
     public static final String MY_QUEUE = "my_hello_world";
+    public static final String MY_SEND_AND_RECEIVE_QUEUE = "orace_js_developer_is_the_best!";
     @Bean
     public MessageConverter messageConverter(){
         MappingJackson2MessageConverter mappingJackson2MessageConverter = new MappingJackson2MessageConverter();
